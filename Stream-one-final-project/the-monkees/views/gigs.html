@@ -1,0 +1,123 @@
+<header>
+    <div class="header-upper">
+        <div class="col-md-12">
+            <a class="sign-up pull-right" href="#/contact">
+                Newsleter Sign up
+            </a>
+            <a href="https://www.youtube.com/results?search_query=monkees" class="social-icon img-responsive pull-right">
+                <img src="img/you-tube-icon-rs21.png" />
+            </a>
+            <a href="https://twitter.com/TheMonkees?lang=en-gb" class="social-icon img-responsive pull-right">
+                <img src="img/Twitter-Icon-grey-rs21.png" />
+            </a>
+            <a href="https://www.facebook.com/TheMonkees/" class="social-icon img-responsive pull-right">
+                <img src="img/facebook-icon-grey-rs21.png" />
+            </a>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/"><strong>The Monkees</strong></a>
+            </div>
+            <ul class="nav nav-pills navbar-right">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/bio">Bio</a></li>
+                <li><a href="#/media">Media</a></li>
+                <li><a href="#/gigs">Gigs & Booking</a></li>
+                <li><a href="#/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="gig">
+    <div class="container-fluid">
+        <div class="row">
+            <header class="col-md-12 page-heading-block">
+                <h1>{{ pageTitle1 }}</h1>
+            </header>
+        </div>
+        
+        <div class="row gig-row">
+            <div class="col-md-12">
+                <!--<div class="row page-nav">-->
+                <!--    <div class="col-md-3">-->
+                <!--        <a href="#">-->
+                <!--            <span class="glyphicon glyphicon-circle-arrow-left"></span> Previous Dates-->
+                <!--        </a>-->
+                <!--    </div>-->
+                <!--    <div class="col-md-6"> </div>-->
+                <!--    <div class="col-md-3 text-right">-->
+                <!--        <a href="#">-->
+                <!--            Next Dates <span class="glyphicon glyphicon-circle-arrow-right"></span>-->
+                <!--        </a>-->
+                <!--    </div>-->
+                <!--</div>-->
+                
+                <div class="row gig-item-row">
+                    
+                    <div class="gig-item" ng-repeat="gig in gigs">
+                        <div class="pull-left gig-date">
+                            <span class="gig-day">{{gig.day}}</span><br />
+                            <span class="gig-month">{{gig.month}}</span>
+                        </div>
+                        <div class="pull-left gig-place">
+                            <h3 class="gig-venue">{{gig.venue}}</h3>
+                            <p class="gig-location">{{gig.location}}</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <header class="col-md-12 page-heading-block">
+                <h1>{{ pageTitle2 }}</h1>
+            </header>
+        </div>
+        
+        <div class="row gig-row">
+            <div class="col-md-12">
+                <h2>Pricing</h2>
+                <p>We are available for all events including Weddings and Corporate functions.</p>
+                
+                <p>See the table below to get a free instant quote</p>   
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                        <table class="table table-striped table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Details</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DJ Services - per hour</td>
+                                    <td>&pound;50</td>
+                                </tr>
+                                <tr>
+                                    <td>Full band, Background music - per hour</td>
+                                    <td>&pound;250</td>
+                                </tr>
+                                <tr>
+                                    <td>Full band performance - per hour</td>
+                                    <td>&pound;300</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                    </div>
+                </div>
+
+                <h2>Availability</h2>
+                <p>Check to see if we are available for your function.</p>
+                <p>Please <a class="text-primary" href="#/contact">contact us</a> to ask your questions regarding availability and place your booking.</p>
+
+            </div>
+        </div>
+    </div>
+</div>

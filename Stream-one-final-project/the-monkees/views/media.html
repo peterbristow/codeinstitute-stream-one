@@ -1,0 +1,133 @@
+<header>
+    <div class="header-upper">
+        <div class="col-md-12">
+            <a class="sign-up pull-right" href="#/contact">
+                Newsleter Sign up
+            </a>
+            <a href="https://www.youtube.com/results?search_query=monkees" class="social-icon img-responsive pull-right">
+                <img src="img/you-tube-icon-rs21.png" />
+            </a>
+            <a href="https://twitter.com/TheMonkees?lang=en-gb" class="social-icon img-responsive pull-right">
+                <img src="img/Twitter-Icon-grey-rs21.png" />
+            </a>
+            <a href="https://www.facebook.com/TheMonkees/" class="social-icon img-responsive pull-right">
+                <img src="img/facebook-icon-grey-rs21.png" />
+            </a>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/"><strong>The Monkees</strong></a>
+            </div>
+            <ul class="nav nav-pills navbar-right">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/bio">Bio</a></li>
+                <li><a href="#/media">Media</a></li>
+                <li><a href="#/gigs">Gigs & Booking</a></li>
+                <li><a href="#/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="media">
+    <div class="container-fluid">
+        <div class="row">
+            <header class="col-md-12 page-heading-block">
+                <h1>{{ pageTitle }}</h1>
+                <a href="https://itunes.apple.com/gb/artist/the-monkees/id4512388">
+                    <img class="img-responsive pull-right" src="img/itunes-logo-rs.png" alt="itunes Logo" />
+                </a>
+            </header>
+        </div>
+        <div class="row">
+            <div class="showcase-audio-skin center-block">
+                <h3>Showcase: Listen to our latest track</h3>
+                <p>I'm A Believer - The Monkees</p>
+                <audio controls preload="auto" loop>
+                	<!--<source src=".ogg" type="audio/ogg" />-->
+                	<source src="audio/ImABeliever.mp3" type="audio/mpeg" />
+                	<a href="audio/ImABeliever.mp3">I'm A Believer - The Monkees</a>
+                </audio>
+            </div>
+        </div>
+        
+        <div class="row audio-item-row">
+            <div class="audio-skin">
+                <p>Clarksville - The Monkees</p>
+                <audio controls preload="none" loop>
+                	<source src="audio/Clarksville.mp3" type="audio/mpeg" />
+                	<a href="audio/Clarksville.mp3">Clarksville - The Monkees</a>
+                </audio>
+            </div>
+            <div class="audio-skin">
+                <p>Daydream Believer - The Monkees</p>
+                <audio controls preload="none" loop>
+                	<source src="audio/DaydreamBeliever.mp3" type="audio/mpeg" />
+                	<a href="audio/DaydreamBeliever.mp3">Daydream Believer - The Monkees</a>
+                </audio>
+            </div>
+        </div>
+        
+        <div class="row audio-item-row">
+            <div class="audio-skin">
+                <p>Stepping Stone - The Monkees</p>
+                <audio controls preload="none" loop>
+                	<source src="audio/SteppingStone.mp3" type="audio/mpeg" />
+                	<a href="audio/SteppingStone.mp3">Stepping Stone - The Monkees</a>
+                </audio>
+            </div>
+            <div class="audio-skin">
+                <p>Tail Toddle</p>
+                <audio controls preload="none" loop>
+                	<source src="audio/tailtoddle_lo.mp3" type="audio/mpeg" />
+                	<a href="audio/tailtoddle_lo.mp3">Tail Toddle</a>
+                </audio>
+            </div>
+        </div>
+        
+        <div class="row">
+            <header class="col-md-12 page-heading-block">
+                <h1>{{ pageTitle2 }}</h1>
+                <a href="https://www.youtube.com/results?search_query=monkees">
+                    <img class="img-responsive pull-right" src="img/You-Tube-Logo-rs.png" alt="You Tube Logo" />
+                </a>
+            </header>
+        </div>
+        <div class="row video-item-row">
+            <video class="vid" width="300" controls="controls" preload="none">
+    			<source src="video/TheMonkees.mp4" />
+    			<!--<source src="video/OGV_Bunny.ogv"/>-->
+    			Your browser does not support the video tag.
+    		</video>
+            <video class="vid" width="300" controls="controls" preload="none">
+    			<source src="video/TheMonkees.mp4" />
+    			<!--<source src="video/OGV_Bunny.ogv"/>-->
+    			Your browser does not support the video tag.
+    		</video>
+            <video class="vid" width="300" controls="controls" preload="none">
+    			<source src="video/TheMonkees.mp4" />
+    			<!--<source src="video/OGV_Bunny.ogv"/>-->
+    			Your browser does not support the video tag.
+    		</video>
+        </div>
+     
+
+        <div class="row">
+            <header class="col-md-12 page-heading-block">
+                <h1>{{ pageTitle3 }}</h1>
+            </header>
+        </div>
+
+        <div class="row img-item-row">
+             <div class="item" ng-repeat="item in images">
+                <a ng-click="openLightboxModal($index)">
+                    <img ng-src="{{item.url}}" alt="{{item.alt}}" class="img-thumbnail">
+                </a>
+            </div>
+        </div>
+    
+    </div>
+    
+</div>

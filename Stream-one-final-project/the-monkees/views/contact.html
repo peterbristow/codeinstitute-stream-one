@@ -1,0 +1,137 @@
+<header>
+    <div class="header-upper">
+        <div class="col-md-12">
+            <a class="sign-up pull-right" href="#/contact">
+                Newsleter Sign up
+            </a>
+            <a href="https://www.youtube.com/results?search_query=monkees" class="social-icon img-responsive pull-right">
+                <img src="img/you-tube-icon-rs21.png" />
+            </a>
+            <a href="https://twitter.com/TheMonkees?lang=en-gb" class="social-icon img-responsive pull-right">
+                <img src="img/Twitter-Icon-grey-rs21.png" />
+            </a>
+            <a href="https://www.facebook.com/TheMonkees/" class="social-icon img-responsive pull-right">
+                <img src="img/facebook-icon-grey-rs21.png" />
+            </a>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/"><strong>The Monkees</strong></a>
+            </div>
+            <ul class="nav nav-pills navbar-right">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/bio">Bio</a></li>
+                <li><a href="#/media">Media</a></li>
+                <li><a href="#/gigs">Gigs & Booking</a></li>
+                <li><a href="#/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="contact">
+    <div class="container-fluid">
+        <div class="row">
+            <header class="col-md-12 page-heading-block">
+                <h1>{{ pageTitle }}</h1>
+            </header>
+        </div>
+        
+        <div class="row contact-row">
+            <div class="col-md-12">
+                <h2>Free Newsletter Sign-up</h2>
+                <p>We will keep you up to date with our up-coming events and material</p>
+            
+                <form name="newsletter_form" novalidate ng-submit="submit(newsletter_form)">
+    			  	<div class="row">
+    			  		<div class="col-md-1 labl">
+    			  		    <label>Email</label>
+    			  		</div>
+    			  		<div class="col-md-5">
+        					<input class="form-control"
+        						type="email" 
+        						placeholder="Type your email address here" 
+        						name="email" 
+        						ng-model="register.email" 
+        						ng-minlength=5 
+        						ng-maxlength=40 
+        						required />
+        				</div>
+    
+            			<div class="col-md-1">
+            			    <button type="submit" class="btn btn-primary">Submit</button>
+            			</div>
+                    </div>
+        		</form>
+
+            </div>
+        </div>
+        
+        <div class="row contact-row">
+            <div class="col-md-12">
+                <h2>Questions, Bookings & Feedback</h2>
+                <p>Use this form to ask your questions, make bookings and to give us your feedback</p>
+                
+                <form class='contact-form' name="contact_form" novalidate ng-submit="submit(contact_form)">
+  
+    	    	<div class="row">
+    				<div class="col-md-1 labl">
+    			  		<label>Username</label>
+    			  	</div>
+    			  	<div class="col-md-11">
+    					<input class="form-control"
+    						type="text" 
+    						placeholder="Type your name here" 
+    						name="name" 
+    						ng-model="contact.name" 
+    						ng-minlength=3 
+    						ng-maxlength=20 
+    						required />
+    				</div>	
+    			</div>
+    
+    			<div class="row">
+    			    <div class="col-md-1 labl">
+    			  		<label>Email</label>
+    			  	</div>
+    			  	<div class="col-md-11">
+    					<input class="form-control"
+    						type="email" 
+    						placeholder="Type your email address here" 
+    						name="email" 
+    						ng-model="register.email" 
+    						ng-minlength=5 
+    						ng-maxlength=40 
+    						required />
+    				</div>
+    			</div>
+    			
+    			<div class="row">
+    			    <div class="col-md-1 labl">
+    			  		<label>Message</label>
+    			  	</div>
+    			  	<div class="col-md-11">
+    			  	    <textarea class="form-control"
+    			  	        type="text"
+    			  	        placeholder="Type your message here"
+    			  	        name="message"
+    			  	        ng-model="register.message"
+    			  	        rows="8"
+    			  	        cols="50"
+                            required>
+    			  	    </textarea>
+    				</div>
+    			</div>
+
+    			<div class="col-md-11">
+    			  	<p> </p>
+			  	</div>
+			  	<div class="col-md-1 buttn">
+        			<button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
